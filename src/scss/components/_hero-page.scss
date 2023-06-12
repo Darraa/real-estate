@@ -1,0 +1,68 @@
+.hero-page {
+    @include fullScreen();
+    @include flexbox($dir: column, $jc: flex-end);
+
+    &__content {
+        @include flexbox($jc: center, $ai: center);
+
+        .wrapper {
+            width: 37%;
+
+            &__text {
+                padding: 0 85px 25px 0;
+
+                span {
+                    color: $orange;
+                    font-weight: $wbold;
+                    font-size: 22px;
+                }
+
+                h1 {
+                    font-weight: $wtitle;
+                    color: $black;
+                    font-size: 54px;
+                }
+            }
+        }
+
+        &-img {
+            width: 35%;
+            filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.03)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.015)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222));
+        }
+
+        &-side {
+            .side-bg {
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: $lily;
+                width: 40%;
+                height: 100%;
+                z-index: -3;
+            }
+        }
+
+        &-social {
+            padding-left: 5%;
+
+            .social {
+                &__list {
+                    @include flexbox($dir: column);
+                    gap: 1.5625rem;
+                }
+            }
+        }
+    }
+
+    &__partner {
+        @include flexbox($dir: column);
+        gap: 1.875rem;
+        color: $text;
+        margin-left: 10%;
+
+        &-list {
+            @include flexbox();
+            gap: 3.125rem;
+        }
+    }
+}

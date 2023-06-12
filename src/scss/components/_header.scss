@@ -1,0 +1,25 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    &__content {
+        padding: 35px;
+        @include flexbox($jc: space-around, $ai: center);
+
+        &-nav {
+            @include flexbox();
+            gap: 2.8125rem;
+
+            a {
+                color: $black;
+                font-weight: $wbold;
+
+                &:hover{
+                    text-decoration: underline;
+                    transition: .7s;
+                }
+            }
+        }
+    }
+}
