@@ -10,14 +10,15 @@ html(lang="en")
         link(href='https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap' rel='stylesheet')
 
         title RealEstate
-    body 
-        include html/header
-        main
-            include html/hero-page
-            include html/process
-            include html/deals
-            include html/featured
-            include html/testimonials
-            include html/mailing-list
-        include html/footer
+    body
+        .container 
+            include html/header
+            main
+                include html/hero-page
+                include html/process
+                include html/deals
+                include html/featured
+                include html/testimonials
+                include html/mailing-list
+            include html/footer
         script(src='js/script.min.js')

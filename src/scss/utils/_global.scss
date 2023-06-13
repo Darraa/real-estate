@@ -3,10 +3,19 @@ body{
     color: $main;
 }
 
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
 .logo{
     font-size: 23px;
     font-weight: $wtitle;
     color: $text;
+}
+
+.small-logo{
+    display: none;
 }
 
 .img-container {
@@ -18,5 +27,19 @@ body{
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+}
+
+.open{
+    display: flex !important;
+}
+
+
+@media screen and (max-width: 526px) {
+    .hide{
+        display: none;
+    }
+    .small-logo{
+        display: inline;
     }
 }

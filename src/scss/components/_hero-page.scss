@@ -3,30 +3,63 @@
     @include flexbox($dir: column, $jc: flex-end);
 
     &__content {
-        @include flexbox($jc: center, $ai: center);
+        @include flexbox($jc: space-between, $ai: center);
 
         .wrapper {
-            width: 37%;
+            width: 50%;
+            height: 90%;
 
             &__text {
-                padding: 0 85px 25px 0;
+                padding: 0 85px 0 0;
 
                 span {
                     color: $orange;
                     font-weight: $wbold;
-                    font-size: 22px;
+                    font-size:  calc(14px + 8 * (100vw / 1280));
                 }
 
                 h1 {
                     font-weight: $wtitle;
                     color: $black;
-                    font-size: 54px;
+                    font-size:  calc(28px + 23 * (100vw / 1280));
                 }
+            }
+
+            &__form {
+                position: absolute;
+                margin-top: 20px;
+                @include flexbox();
+
+                &-icon {
+                    position: absolute;
+                    left: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                &-btn {
+                    background-color: $btn;
+                    color: #FFFFFF;
+                    font-weight: $wbold;
+                    padding: 30px;
+                    z-index: 1;
+                }
+            }
+
+            &__input {
+                color: $text;
+                padding: 30px;
+                width: 32.75rem;
+                z-index: 3;
+                background: #FFFFFF;
+                border: 1px solid #DADADA;
+                box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
             }
         }
 
         &-img {
-            width: 35%;
+            z-index: -1;
+            width: 43%;
             filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.03)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.015)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222));
         }
 
@@ -58,11 +91,119 @@
         @include flexbox($dir: column);
         gap: 1.875rem;
         color: $text;
-        margin-left: 10%;
 
         &-list {
             @include flexbox();
             gap: 3.125rem;
         }
+    }
+}
+
+
+@media screen and (max-width: 1027px) {
+    .hero-page {
+        &__content {
+            &-social {
+                display: none;
+            }
+
+            .wrapper {
+                &__text {
+                    padding: 0;
+                }
+
+                &__form {
+                    margin-top: 10px;
+
+                    &-btn {
+                        padding: 23px;
+                    }
+                }
+
+                &__input {
+                    padding: 23px;
+                    width: 30.3rem;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 948px) {
+    .hero-page {
+        justify-content: space-evenly;
+        align-items: center;
+
+        &__content {
+            justify-content: center;
+
+            .wrapper {
+                width: 90%;
+            }
+
+            &-img {
+                display: none;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 697px) {
+    .hero-page {
+        &__content {
+            .wrapper {
+                &__input {
+                    width: 20.3rem;
+                }
+            }
+        }
+        &__partner{
+            &-list{
+                justify-content: center;
+                gap: 1.125rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 526px) {
+    .hero-page {
+        &__content {
+            .wrapper {
+                &__input {
+                    width: 10.3rem;
+                }
+            }
+        }
+        &__partner{
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width: 357px) {
+    .hero-page {
+        &__content {
+
+            .wrapper {
+                &__form {
+
+                    &-btn {
+                        padding: 14px;
+                    }
+
+                    &-icon{
+                        display: none;
+                    }
+                }
+
+                &__input {
+                    padding: 14px;
+                }
+            }
+        }
+
     }
 }

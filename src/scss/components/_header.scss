@@ -6,6 +6,7 @@
     &__content {
         padding: 35px;
         @include flexbox($jc: space-around, $ai: center);
+        gap: 11rem;
 
         &-nav {
             @include flexbox();
@@ -20,6 +21,16 @@
                     transition: .7s;
                 }
             }
+        }
+    }
+}
+
+
+@media screen and (max-width: 526px) {
+    .header{
+        &__content{
+            gap: 0;
+            justify-content: space-between;
         }
     }
 }

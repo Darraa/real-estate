@@ -10,110 +10,113 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&amp;display=swap" rel="stylesheet">
     <title>RealEstate</title>
   </head>
-  <body> 
-    <header class="header">
-      <div class="header__content"><span class="logo">SmartSpace</span>
-        <ul class="header__content-nav">
-          <li> <a href="#">Home</a></li>
-          <li> <a href="#"> About</a></li>
-          <li> <a href="#"> Service</a></li>
-          <li> <a href="#"> Portfolio</a></li>
-          <li> <a href="#"> Blog</a></li>
-          <li> <a href="#"> Contact</a></li>
-        </ul>
-      </div>
-    </header>
-    <main>
-      <section class="hero-page"> 
-        <div class="hero-page__content">
-          <div class="hero-page__content-wrapper wrapper">
-            <div class="wrapper__text"><span>RESIDENTIAL & OFFICE SPACES</span>
-              <h1>Smart Living Style for Smart People</h1>
-              <p>Much did had call new drew that kept. Limits expect wonder law she. Now has you views woman noisy match money rooms.</p>
+  <body>
+    <div class="container"> 
+      <header class="header">
+        <div class="header__content"><span class="logo hide"> SmartSpace</span><span class="logo small-logo">SS</span>
+          <ul class="header__content-nav">
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#"> About</a></li>
+            <li> <a href="#"> Service</a></li>
+            <li> <a href="#"> Portfolio</a></li>
+            <li> <a href="#"> Blog</a></li>
+            <li> <a href="#"> Contact</a></li>
+          </ul>
+          <div class="burger"> <span> </span></div>
+        </div>
+      </header>
+      <main>
+        <section class="hero-page"> 
+          <div class="hero-page__content">
+            <div class="hero-page__content-wrapper wrapper">
+              <div class="wrapper__text"><span>RESIDENTIAL & OFFICE SPACES</span>
+                <h1>Smart Living Style for Smart People</h1>
+                <p>Much did had call new drew that kept. Limits expect wonder law she. Now has you views woman noisy match money rooms.</p>
+              </div>
+              <div class="wrapper__form"> 
+                <label class="wrapper__form-field">
+                  <input class="wrapper__input" type="text" placeholder="Enter Zipcode to search properties">
+                  <svg class="svg-social wrapper__form-icon" width="15" height="15">
+                    <use xlink:href="img/svg-sprite.svg#icon-icon-input"></use>
+                  </svg>
+                </label>
+                <button class="wrapper__form-btn"> Search Now!</button>
+              </div>
             </div>
-            <div class="wrapper__input">
-              <label>
-                <input type="text" placeholder="Enter Zipcode to search properties">
-                <svg class="svg-social" width="15" height="15">
-                  <use xlink:href="img/svg-sprite.svg#icon-icon-input"></use>
-                </svg>
-              </label>
-              <button>Search Now!</button>
+            <div class="hero-page__content-img img">
+              <div class="img-container"> <img src="img/header-image.png" alt="building"></div>
+            </div>
+            <div class="hero-page__content-social social">
+              <ul class="social__list"> 
+                <li> 
+                  <svg class="svg-social" width="20" height="20">
+                    <use xlink:href="img/svg-sprite.svg#icon-facebook"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="svg-social" width="20" height="20">
+                    <use xlink:href="img/svg-sprite.svg#icon-instagram"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="svg-social" width="20" height="20">
+                    <use xlink:href="img/svg-sprite.svg#icon-twitter"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="svg-social" width="20" height="20">
+                    <use xlink:href="img/svg-sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+            <div class="hero-page__content-side">
+              <div class="side-bg"> </div>
             </div>
           </div>
-          <div class="hero-page__content-img img">
-            <div class="img-container"> <img src="img/header-image.png" alt="building"></div>
-          </div>
-          <div class="hero-page__content-social social">
-            <ul class="social__list"> 
+          <div class="hero-page__partner"><span>Our Amazing Partners</span>
+            <ul class="hero-page__partner-list">
               <li> 
-                <svg class="svg-social" width="20" height="20">
-                  <use xlink:href="img/svg-sprite.svg#icon-facebook"></use>
+                <svg class="svg-social" width="70" height="23">
+                  <use xlink:href="img/svg-sprite.svg#icon-buzz"></use>
                 </svg>
               </li>
               <li>
-                <svg class="svg-social" width="20" height="20">
-                  <use xlink:href="img/svg-sprite.svg#icon-instagram"></use>
+                <svg class="svg-social" width="70" height="23">
+                  <use xlink:href="img/svg-sprite.svg#icon-chase"></use>
                 </svg>
               </li>
               <li>
-                <svg class="svg-social" width="20" height="20">
-                  <use xlink:href="img/svg-sprite.svg#icon-twitter"></use>
+                <svg class="svg-social" width="70" height="23">
+                  <use xlink:href="img/svg-sprite.svg#icon-microsoft"></use>
                 </svg>
               </li>
               <li>
-                <svg class="svg-social" width="20" height="20">
-                  <use xlink:href="img/svg-sprite.svg#icon-linkedin"></use>
+                <svg class="svg-social" width="70" height="23">
+                  <use xlink:href="img/svg-sprite.svg#icon-gucc"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="svg-social" width="70" height="23">
+                  <use xlink:href="img/svg-sprite.svg#icon-airbnb"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="svg-social" width="70" height="23">
+                  <use xlink:href="img/svg-sprite.svg#icon-uber"></use>
                 </svg>
               </li>
             </ul>
           </div>
-          <div class="hero-page__content-side">
-            <div class="side-bg"> </div>
-          </div>
-        </div>
-        <div class="hero-page__partner"><span>Our Amazing Partners</span>
-          <ul class="hero-page__partner-list">
-            <li> 
-              <svg class="svg-social" width="70" height="23">
-                <use xlink:href="img/svg-sprite.svg#icon-buzz"></use>
-              </svg>
-            </li>
-            <li>
-              <svg class="svg-social" width="70" height="23">
-                <use xlink:href="img/svg-sprite.svg#icon-chase"></use>
-              </svg>
-            </li>
-            <li>
-              <svg class="svg-social" width="70" height="23">
-                <use xlink:href="img/svg-sprite.svg#icon-microsoft"></use>
-              </svg>
-            </li>
-            <li>
-              <svg class="svg-social" width="70" height="23">
-                <use xlink:href="img/svg-sprite.svg#icon-gucc"></use>
-              </svg>
-            </li>
-            <li>
-              <svg class="svg-social" width="70" height="23">
-                <use xlink:href="img/svg-sprite.svg#icon-airbnb"></use>
-              </svg>
-            </li>
-            <li>
-              <svg class="svg-social" width="70" height="23">
-                <use xlink:href="img/svg-sprite.svg#icon-uber"></use>
-              </svg>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section> </section>
-      <section> </section>
-      <section> </section>
-      <section> </section>
-      <section> </section>
-    </main>
-    <footer> </footer>
+        </section>
+        <section> </section>
+        <section> </section>
+        <section> </section>
+        <section> </section>
+        <section> </section>
+      </main>
+      <footer> </footer>
+    </div>
     <script src="js/script.min.js"></script>
   </body>
 </html>
