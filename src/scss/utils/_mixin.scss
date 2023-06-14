@@ -10,3 +10,16 @@
     width: $width;
     height: $height;
 }
+
+@mixin icon ($width: 90px, $height: 90px, $br: 2rem){
+    width: $width;
+    height: $height;
+    border-radius: $br;
+}
+
+@mixin dot ($width: 11px, $height: 11px, $br: 50%, $mb: 5px){
+    width: $width;
+    height: $height;
+    border-radius: $br;
+    margin-bottom: $mb;
+}

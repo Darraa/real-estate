@@ -68,7 +68,7 @@
                 position: absolute;
                 top: 0;
                 right: 0;
-                background-color: $lily;
+                background-color: $lily-bg;
                 width: 40%;
                 height: 100%;
                 z-index: -3;
@@ -91,6 +91,7 @@
         @include flexbox($dir: column);
         gap: 1.875rem;
         color: $text;
+        margin-bottom: 10px;
 
         &-list {
             @include flexbox();
