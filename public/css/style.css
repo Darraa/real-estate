@@ -100,6 +100,17 @@ body {
   display: flex !important;
 }
 
+button:hover {
+  opacity: 0.8;
+  transition: 0.6s;
+}
+
+h3 {
+  font-size: calc(30px + 0.78125vw);
+  font-weight: 600;
+  color: #000;
+}
+
 @media screen and (max-width: 526px) {
   .hide {
     display: none;
@@ -401,11 +412,6 @@ body {
   flex-wrap: wrap;
   gap: 4.375rem;
 }
-.process h2 {
-  font-size: calc(30px + 0.78125vw);
-  font-weight: 600;
-  color: #000;
-}
 .process__container {
   display: flex;
   flex-direction: row;
@@ -524,5 +530,113 @@ body {
   }
   .process__container-line {
     display: none;
+  }
+}
+.deals {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2.8125rem;
+  padding-bottom: 120px;
+}
+.deals__head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.deals__head p {
+  width: 65%;
+}
+.deals__head button {
+  background-color: #F85A47;
+  box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.07), 0px 64.8148px 46.8519px rgba(248, 90, 71, 0.0531481), 0px 38.5185px 25.4815px rgba(248, 90, 71, 0.0425185), 0px 20px 13px rgba(248, 90, 71, 0.035), 0px 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815), 0px 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519);
+  padding: 20px 30px;
+  border-radius: 5px;
+  color: #fff;
+}
+.deals__filter-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 50px;
+  font-size: 19px;
+}
+.deals__filter-list li {
+  cursor: pointer;
+}
+.deals__filter-list li:nth-child(1) {
+  color: #F85A47;
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+.deals__filter-list li:hover {
+  color: #F85A47;
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+.deals__img {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1.875rem;
+  position: relative;
+}
+.deals__img-badge {
+  position: absolute;
+  margin: 0.875rem;
+}
+.deals__img-badge span {
+  padding: 6px 12px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.deals__img-badge span:nth-child(2) {
+  margin-left: 6px;
+}
+
+@media screen and (max-width: 1170px) {
+  .deals {
+    padding-top: 120px;
+  }
+  .deals__head {
+    justify-content: space-around;
+  }
+  .deals__filter {
+    width: 100%;
+  }
+  .deals__filter-list {
+    justify-content: center;
+  }
+  .deals__img {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 948px) {
+  .deals {
+    padding: 120px 30px;
+  }
+  .deals__head {
+    justify-content: center;
+    gap: 1.25rem;
+  }
+  .deals__head-title {
+    text-align: center;
+  }
+  .deals__head-title p {
+    width: 100%;
+  }
+  .deals__filter-list {
+    gap: 1.25rem;
   }
 }

@@ -34,6 +34,17 @@ body{
     display: flex !important;
 }
 
+button:hover{
+    opacity: .8;
+    transition: .6s;
+}
+
+h3 {
+    font-size:  calc(30px + 10 * (100vw / 1280));
+    font-weight: $wh2;
+    color: $black;
+}
+
 
 @media screen and (max-width: 526px) {
     .hide{

@@ -3,11 +3,7 @@
     @include flexbox($dir: column, $jc: center, $ai: center);
     gap: 4.375rem;
 
-    h2 {
-        font-size:  calc(30px + 10 * (100vw / 1280));
-        font-weight: $wh2;
-        color: $black;
-    }
+
 
     &__container {
         @include flexbox($jc: center, $ai: center);

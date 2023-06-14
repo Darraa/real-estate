@@ -1,0 +1,114 @@
+.deals {
+    @include flexbox($dir: column, $jc: center);
+    gap: 2.8125rem;
+    padding-bottom: 120px;
+
+    &__head {
+        @include flexbox($jc: space-between, $ai: center);
+        width: 100%;
+
+        p {
+            width: 65%
+        }
+
+        button {
+            background-color: $btn;
+            box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.07), 0px 64.8148px 46.8519px rgba(248, 90, 71, 0.0531481), 0px 38.5185px 25.4815px rgba(248, 90, 71, 0.0425185), 0px 20px 13px rgba(248, 90, 71, 0.035), 0px 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815), 0px 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519);
+            padding: 20px 30px;
+            border-radius: 5px;
+            color: $white;
+        }
+
+    }
+
+    &__filter {
+        &-list {
+            @include flexbox();
+            gap: 50px;
+            font-size: 19px;
+
+            li {
+                cursor: pointer;
+
+                &:nth-child(1) {
+                    color: $btn;
+                    margin-bottom: 5px;
+                    text-decoration: underline;
+                }
+
+                &:hover {
+                    color: $btn;
+                    margin-bottom: 5px;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &__img {
+        @include flexbox();
+        gap: 1.875rem;
+        position: relative;
+
+        &-badge {
+            position: absolute;
+            margin: 0.875rem;
+
+            span {
+                padding: 6px 12px;
+                color: $white;
+                border: 1px solid $white;
+                border-radius: 5px;
+                background-color: $badge;
+
+                &:nth-child(2){
+                    margin-left: 6px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .deals{
+        padding-top: 120px;
+        &__head{
+            justify-content: space-around;
+        }
+
+        &__filter{
+            width: 100%;
+            &-list{
+                justify-content: center;
+            }
+        }
+
+        &__img{
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 948px) {
+    .deals{
+        padding: 120px 30px;
+        &__head{
+            justify-content:center;
+            gap: 1.25rem;
+
+            &-title{
+                text-align: center;
+
+                p{
+                    width: 100%;
+                }
+            }
+        }
+
+        &__filter{
+            &-list{
+                gap: 1.25rem;
+            }
+        }
+    }
+}
