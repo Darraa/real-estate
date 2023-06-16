@@ -1,0 +1,118 @@
+.featured {
+    @include fullScreen();
+    @include flexbox($jc: center, $ai: center);
+
+    &__container {
+        @include flexbox($wrap: nowrap);
+        background-color: $featured-bg;
+        height: 75%;
+        position: relative;
+        gap: 1em;
+
+        &-images {
+            margin: 2.5rem;
+
+            .img-office {
+                position: absolute;
+                width: 28%;
+                bottom: 0;
+                margin: 0px 0 60px 25px;
+            }
+        }
+
+        &-text {
+            align-self: center;
+
+            .text {
+                &__container {
+                    width: 70%;
+
+                    h4 {
+                        font-size:  calc(20px + 11 * (100vw / 1280));
+                        font-weight: $wh2;
+                        color: $black;
+                        padding-bottom: 1.75rem;
+                    }
+
+                    p {
+                        width: 70%;
+                        padding-bottom: 2.5rem;
+                    }
+
+                    &-data {
+                        @include flexbox();
+                        gap: 5rem;
+                        padding-bottom: 2.1875em;
+
+                        li {
+                            @include flexbox($dir: column);
+
+                            span {
+                                &:nth-child(1) {
+                                    font-weight: $wbold;
+                                    color: $black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            button {
+                width: 80%;
+                background-color: $btn;
+                box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.07), 0px 64.8148px 46.8519px rgba(248, 90, 71, 0.0531481), 0px 38.5185px 25.4815px rgba(248, 90, 71, 0.0425185), 0px 20px 13px rgba(248, 90, 71, 0.035), 0px 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815), 0px 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519);
+                border-radius: 5px;
+                padding: 0.9375rem;
+                color: $white;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 948px) {
+    .featured {
+        &__container {
+            &-images {
+                display: none;
+            }
+
+            &-text {
+                text-align: center;
+
+                .text {
+                    &__container {
+                        width: 100%;
+
+                        &-data {
+                            justify-content: center;
+                        }
+
+                        p {
+                            width: 95%;
+                            margin: 0 15px 30px 15px;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 357px) {
+    .featured {
+        &__container {
+            &-text {
+                .text {
+                    &__container {
+                        &-data {
+                            gap: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
