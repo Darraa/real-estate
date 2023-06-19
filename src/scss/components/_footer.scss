@@ -1,0 +1,48 @@
+.footer{
+    @include flexbox($dir: column, $ai: center, $jc: center);
+    gap: 3rem
+    ;
+    padding: 35px;
+    hr{
+        border: 1px solid $line;
+        width: 100%;
+    }
+    &__content {
+        @include flexbox($jc: space-between, $ai: center);
+        width: 100%;
+
+        &-nav {
+            @include flexbox();
+            gap: 2.8125rem;
+
+            a {
+                color: $black;
+                font-weight: $wbold;
+
+                &:hover{
+                    text-decoration: underline;
+                    transition: .7s;
+                }
+            }
+        }
+    }
+
+    .copyright{
+        font-weight: $wbold;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .footer{
+        &__content{
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+
+            &-nav{
+                gap: 1rem;
+            }
+        }
+    }
+}
