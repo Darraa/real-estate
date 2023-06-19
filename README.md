@@ -13,7 +13,7 @@ Features of the project
 <h2>Getting Started</h2>
 To get started with the real-estate project, follow these steps:
 
-  1. Clone the repository: git clone https://github.com/your-username/realestate-landing-page.git
+  1. Clone the repository: git clone https://github.com/Darraa/real-estate.git
   2. Navigate to the project directory: cd realestate-landing-page
   3. Install dependencies: npm install
   4. Build the project: gulp build
