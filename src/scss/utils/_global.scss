@@ -1,20 +1,20 @@
-body{
+body {
     font-family: 'Manrope', sans-serif;
     color: $main;
 }
 
-.container{
+.container {
     max-width: 1170px;
     margin: 0 auto;
 }
 
-.logo{
+.logo {
     font-size: 23px;
     font-weight: $wtitle;
     color: $text;
 }
 
-.small-logo{
+.small-logo {
     display: none;
 }
 
@@ -30,27 +30,38 @@ body{
     }
 }
 
-.open{
+.open {
     display: flex !important;
 }
 
-button:hover{
+button:hover {
     opacity: .8;
     transition: .6s;
 }
 
+h2 {
+    font-weight: $wbold;
+    font-size: 45px;
+}
+
 h3 {
-    font-size:  calc(30px + 10 * (100vw / 1280));
+    font-size: calc(30px + 10 * (100vw / 1280));
     font-weight: $wh2;
     color: $black;
 }
 
+h4 {
+    font-size: 22px calc(18px + 4 * (100vw / 1280));
+    font-weight: $wh2;
+}
+
 
 @media screen and (max-width: 526px) {
-    .hide{
+    .hide {
         display: none;
     }
-    .small-logo{
+
+    .small-logo {
         display: inline;
     }
 }

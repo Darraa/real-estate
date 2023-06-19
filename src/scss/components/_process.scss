@@ -14,11 +14,9 @@
             width: 20%;
 
             h4 {
-                font-size: 22px calc(18px + 4 * (100vw / 1280));
-                font-weight: $wh2;
-                color: $black;
                 padding-bottom: 15px;
                 padding-top: 3.125rem;
+                color: $black;
             }
 
             .icon {
