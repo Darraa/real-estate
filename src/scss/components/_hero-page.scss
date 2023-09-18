@@ -4,6 +4,7 @@
 
     &__content {
         @include flexbox($jc: space-between, $ai: center);
+        padding-left: 3%;
 
         .wrapper {
             width: 50%;
@@ -15,13 +16,13 @@
                 span {
                     color: $orange;
                     font-weight: $wbold;
-                    font-size:  calc(14px + 8 * (100vw / 1280));
+                    font-size: calc(14px + 8 * (100vw / 1280));
                 }
 
                 h1 {
                     font-weight: $wtitle;
                     color: $black;
-                    font-size:  calc(28px + 23 * (100vw / 1280));
+                    font-size: calc(28px + 23 * (100vw / 1280));
                 }
             }
 
@@ -49,7 +50,7 @@
             &__input {
                 color: $text;
                 padding: 30px;
-                width: 32.75rem;
+                width: 31.75rem;
                 z-index: 3;
                 background: #FFFFFF;
                 border: 1px solid #DADADA;
@@ -89,6 +90,7 @@
 
     &__partner {
         @include flexbox($dir: column);
+        padding-left: 3%;
         gap: 1.875rem;
         color: $text;
         margin-bottom: 10px;
@@ -135,6 +137,7 @@
     .hero-page {
         justify-content: space-evenly;
         align-items: center;
+        height: 120vh;
 
         &__content {
             justify-content: center;
@@ -151,17 +154,21 @@
     }
 }
 
-@media screen and (max-width: 697px) {
+
+@media screen and (max-width: 790px) {
     .hero-page {
         &__content {
             .wrapper {
                 &__input {
-                    width: 20.3rem;
+                    width: 9.3rem;
                 }
             }
         }
-        &__partner{
-            &-list{
+
+        &__partner {
+            align-items: flex-end;
+
+            &-list {
                 justify-content: center;
                 gap: 1.125rem;
             }
@@ -169,22 +176,7 @@
     }
 }
 
-@media screen and (max-width: 526px) {
-    .hero-page {
-        &__content {
-            .wrapper {
-                &__input {
-                    width: 10.3rem;
-                }
-            }
-        }
-        &__partner{
-            align-items: center;
-        }
-    }
-}
-
-@media screen and (max-width: 357px) {
+@media screen and (max-width: 530px) {
     .hero-page {
         &__content {
 
@@ -195,7 +187,7 @@
                         padding: 14px;
                     }
 
-                    &-icon{
+                    &-icon {
                         display: none;
                     }
                 }
@@ -204,6 +196,10 @@
                     padding: 14px;
                 }
             }
+        }
+
+        &__partner {
+            align-items: center;
         }
 
     }

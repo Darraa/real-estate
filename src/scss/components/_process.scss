@@ -1,5 +1,5 @@
 .process {
-    @include fullScreen();
+    width: 100%;
     @include flexbox($dir: column, $jc: center, $ai: center);
     gap: 4.375rem;
 
