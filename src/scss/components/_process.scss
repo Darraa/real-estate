@@ -2,7 +2,7 @@
     width: 100%;
     @include flexbox($dir: column, $jc: center, $ai: center);
     gap: 4.375rem;
-
+    padding: 5% 0;
 
 
     &__container {

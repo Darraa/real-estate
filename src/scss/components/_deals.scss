@@ -1,7 +1,7 @@
 .deals {
     @include flexbox($dir: column, $jc: center);
     gap: 2.8125rem;
-    padding-bottom: 120px;
+    padding: 5% ;
 
     &__head {
         @include flexbox($jc: space-between, $ai: center);
@@ -71,7 +71,6 @@
 
 @media screen and (max-width: 1170px) {
     .deals{
-        padding-top: 120px;
         &__head{
             justify-content: space-around;
         }
@@ -91,7 +90,6 @@
 
 @media screen and (max-width: 948px) {
     .deals{
-        padding: 120px 30px;
         &__head{
             justify-content:center;
             gap: 1.25rem;

@@ -459,6 +459,7 @@ h4 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 4.375rem;
+  padding: 5% 0;
 }
 
 .process__container {
@@ -649,7 +650,7 @@ h4 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 2.8125rem;
-  padding-bottom: 120px;
+  padding: 5%;
 }
 
 .deals__head {
@@ -1293,10 +1294,6 @@ h4 {
 }
 
 @media screen and (max-width: 1170px) {
-  .deals {
-    padding-top: 120px;
-  }
-
   .deals__head {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -1462,10 +1459,6 @@ h4 {
 
   .hero-page__content-img {
     display: none;
-  }
-
-  .deals {
-    padding: 120px 30px;
   }
 
   .deals__head {
